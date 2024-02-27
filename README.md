@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/Albrt78/frontend_mentor_project/tree/main/Fylo%20Landing%20Page]
--   Live Site URL: [https://65b5f18bcdadaf21d7c69765--luminous-bunny-12b656.netlify.app/]
+-   Solution URL: [Fylo Landing Page](https://github.com/Albrt78/fylolandingpage.github.io)
+-   Live Site URL: [Fylo Landing Page](https://albrt78.github.io/fylolandingpage.github.io/)
 
 ### Built with
 
