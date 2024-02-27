@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32x32.png"
+        />
+
+        <title>
+            Frontend Mentor | Fylo landing page with two column layout
+        </title>
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- Font Family -->
+        <!-- Raleway -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Open sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Animation On Scroll -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <header class="d-flex justify-content-between align-items-center">
+            <section class="header__logo" data-aos="fade-right">
+                <a href="#"><img src="images/logo.svg" alt="Fylo Logo" /></a>
+            </section>
+
+            <section class="nav__wrapper d-flex align-items-center">
+                <nav class="navbar" data-aos="fade-left">
+                    <ul>
+                        <li><a href="#" class="nav__link">Features</a></li>
+                        <li><a href="#" class="nav__link">Team</a></li>
+                        <li><a href="#" class="nav__link">Sign In</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav-icon">
+                    <p id="hamburger-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </p>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <section class="main__wrapper d-flex justify-content-between gap-3">
+                <section class="main__content">
+                    <h1 data-aos="fade-up-right">
+                        All your files in one secure location, accessible
+                        anywhere.
+                    </h1>
+
+                    <p data-aos="fade-up-left">
+                        Fylo stores your most important files in one secure
+                        location. Access them wherever you need, share and
+                        collaborate with friends, family, and co-workers.
+                    </p>
+
+                    <section class="main__content-register" data-aos="zoom-in">
+                        <form action="#" class="d-flex">
+                            <section class="input-wrapper">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="input"
+                                    placeholder="Enter your email..."
+                                />
+                                <p id="alert">Please check your email</p>
+                            </section>
+                            <button type="submit" id="button">
+                                Get Started
+                            </button>
+                        </form>
+                    </section>
+                </section>
+
+                <section class="main__wrapper-img">
+                    <img
+                        src="images/illustration-1.svg"
+                        alt=""
+                        data-aos="flip-up"
+                    />
+                </section>
+            </section>
+
+            <section class="bg-img">
+                <picture>
+                    <source
+                        srcset="images/bg-curve-mobile.svg"
+                        media="(max-width: 650.98px)"
+                    />
+                    <img
+                        src="images/bg-curve-desktop.svg"
+                        alt="Curve Background"
+                    />
+                </picture>
+            </section>
+
+            <section class="hero__wrapper d-flex justify-content-between">
+                <section class="hero__content">
+                    <h2 data-aos="flip-down">
+                        Stay productive, wherever you are
+                    </h2>
+
+                    <p
+                        class="hero__content-detail"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                    >
+                        Never let location be an issue when accessing your
+                        files. Fylo has you covered for all of your file storage
+                        needs.
+                    </p>
+
+                    <p
+                        class="hero__content-detail"
+                        data-aos="fade-up"
+                        data-aos-duration="100"
+                    >
+                        Securely share files and folders with friends, family
+                        and colleagues for live collaboration. No email
+                        attachments required!
+                    </p>
+
+                    <p class="hero__content-link" data-aos="zoom-out-down">
+                        <a href="#" class="d-flex align-items-center gap-2">
+                            See how Fylo works
+                            <img src="images/icon-arrow.svg" alt="arrow icon" />
+                        </a>
+                    </p>
+
+                    <section
+                        class="hero__content-review"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                    >
+                        <img src="images/icon-quotes.svg" alt="quotes icon" />
+
+                        <blockquote class="hero__content-desc mb-0 pb-0">
+                            Fylo has improved our team productivity by an order
+                            of magnitude. Since making the switch our team has
+                            become a well-oiled collaboration machine.
+                        </blockquote>
+
+                        <section
+                            class="profile d-flex align-items-center gap-2"
+                        >
+                            <img
+                                src="images/avatar-testimonial.jpg"
+                                alt="Kyle Burton Founder & CEO, Huddle avatar"
+                            />
+                            <section class="profile-detail mb-0 pb-0">
+                                <h3 class="pt-4">Kyle Burton</h3>
+                                <p>Founder & CEO, Huddle</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="hero__wrapper-img">
+                    <img
+                        src="images/illustration-2.svg"
+                        alt=""
+                        data-aos="zoom-out-up"
+                    />
+                </section>
+            </section>
+
+            <section
+                class="newsletter d-flex justify-content-between align-items-center gap-5"
+            >
+                <section class="newsletter-detail">
+                    <h4
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                    >
+                        Get early access today
+                    </h4>
+
+                    <p
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                    >
+                        It only takes a minute to sign up and our free starter
+                        tier is extremely generous. If you have any questions,
+                        our support team would be happy to help you.
+                    </p>
+                </section>
+
+                <section
+                    class="newsletter-input"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                >
+                    <form action="#">
+                        <section class="newsletter-form">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="email@example.com"
+                                id="newsletter-form"
+                            />
+                            <p id="newsletter-alert">Please check your email</p>
+                        </section>
+                        <button id="newsletter-button">
+                            Get Started For Free
+                        </button>
+                    </form>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <svg
+                width="230px"
+                height="49px"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="mb-3"
+                data-aos="fade-down"
+                data-aos-anchor-placement="top-bottom"
+            >
+                <defs><path id="a" d="M.014.03h93.96v48.29H.015z" /></defs>
+                <g fill="none" fill-rule="evenodd">
+                    <path
+                        d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
+                        fill="#fff"
+                    />
+                    <g transform="translate(72)">
+                        <mask id="b" fill="#fff"><use xlink:href="#a" /></mask>
+                        <path
+                            d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 
+                               0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 
+                               2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 
+                               1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 
+                               0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 
+                               4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 
+                               1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 
+                               1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 
+                               1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 
+                               3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 
+                               8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 
+                               16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
+                            fill="#fff"
+                            mask="url(#b)"
+                        />
+                    </g>
+                </g>
+            </svg>
+
+            <section class="footer-wrapper">
+                <section class="contact">
+                    <ul>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            <img src="images/icon-phone.svg" alt="phone icon" />
+                            Phone +1-543-123-4567
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            <img src="images/icon-email.svg" alt="email icon" />
+                            example@fylo.com
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="faq-1">
+                    <ul>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            About Us
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Jobs
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Press
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Blog
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="faq-2">
+                    <ul>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Contact Us
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Terms
+                        </li>
+                        <li
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
+                            Privacy
+                        </li>
+                    </ul>
+                </section>
+
+                <section
+                    class="social-media"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                >
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </section>
+            </section>
+
+            <p>
+                Challenge by
+                <a href="https://www.frontendmentor.io/?ref=challenge"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a href="https://www.frontendmentor.io/profile/Albrt78"
+                    >Albrt78</a
+                >.
+            </p>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- My JS -->
+        <script src="script.js"></script>
+    </body>
+</html>
