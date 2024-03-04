@@ -61,7 +61,7 @@ hamburgerIcon.onclick = () => {
 };
 
 document.addEventListener("click", (e) => {
-    if (!hamburgerIcon.contains(e.target) && hamburgerMenu.contains(e.target)) {
+    if (!hamburgerIcon.contains(e.target) && !hamburgerMenu.contains(e.target)) {
         hamburgerMenu.classList.remove("active");
     }
 });
