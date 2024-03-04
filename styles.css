@@ -560,6 +560,10 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         top: 0;
     }
 
+     .nav__wrapper .navbar ul li .nav__link::after {
+        display: none;
+    }
+
     .nav__wrapper .navbar ul {
         margin: 0;
         padding: 0;
