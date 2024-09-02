@@ -32,6 +32,7 @@ body {
 /* Header Section Start */
 header {
     padding: 2.7rem 5rem;
+    position: relative;
 }
 
 .header__logo img {
@@ -393,8 +394,10 @@ footer .footer-wrapper .contact ul li img {
 }
 
 footer .footer-wrapper .social-media a .fa-brands {
-    width: 35px;
-    height: 35px;
+    --size: 35px;
+
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
     color: var(--Light-Grayish-Blue);
     border: 1.5px solid var(--Light-Grayish-Blue);
@@ -513,28 +516,29 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     }
 
     .nav__wrapper .navbar {
-        z-index: 999;
+        z-index: 9999;
         position: absolute;
-        width: auto;
-        top: -500%;
-        left: 5rem;
-        right: 5rem;
-        background-color: var(--Very-Dark-Blue);
-        padding: 4rem 1.3rem;
-        border-radius: 1rem;
+        width: 25rem;
+        top: 70%;
+        right: -200%;
+        background-color: #1201018a;
+        backdrop-filter: blur(20px);
+        padding: 4rem 0 4rem 1.3rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
         transition: 0.3s ease-in-out;
-        transform-origin: top;
+        transform-origin: 0 0;
     }
 
     .nav__wrapper .navbar.active {
-        top: 15%;
+        right: 0;
     }
 
     .nav__wrapper .navbar ul {
         flex-direction: column;
         gap: 3rem;
         width: 100%;
-        padding-inline: 2.7rem;
+        padding-inline-start: 2.7rem;
     }
 
     .nav__wrapper .navbar ul li {
@@ -543,9 +547,9 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         width: 100%;
         background-color: whitesmoke;
         padding-block: 1.5rem;
-        padding-inline: 3rem;
-        border-radius: var(--radius);
-        text-align: center;
+        padding-inline-start: 3rem;
+        border-top-left-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
     }
 
     .nav__wrapper .navbar ul li .nav__link {
@@ -577,13 +581,26 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
 
 @media (max-width: 661.98px) {
     header,
-    .hero__wrapper {
+    .hero__wrapper,
+    main .newsletter,
+    footer {
         padding-inline: 3rem;
     }
 
     .nav__wrapper .navbar {
-        left: 3rem;
-        right: 3rem;
+        width: 20rem;
+    }
+
+    .nav__wrapper .navbar ul {
+        padding-inline-start: 2rem;
+    }
+
+    .nav__wrapper .navbar ul li {
+        padding-block: 1.3rem;
+    }
+
+    .nav__wrapper .navbar ul li .nav__link {
+        font-size: 1.3rem;
     }
 
     .main__wrapper {
@@ -602,33 +619,19 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     .hero__content-review {
         justify-content: center;
     }
-
-    main .newsletter,
-    footer {
-        padding-inline: 3rem;
-    }
 }
 
-@media (max-width: 376.98px) {
+@media (max-width: 430.98px) {
     header,
-    .hero__wrapper {
+    .hero__wrapper,
+    .main__wrapper,
+    main .newsletter,
+    footer {
         padding-inline: 2rem;
     }
 
     .header__logo img {
         width: 9rem;
-    }
-
-    .main__content p {
-        font-size: 0.8rem;
-    }
-
-    .main__wrapper {
-        padding-inline: 2rem;
-    }
-
-    .main__content {
-        padding-top: 0;
     }
 
     .main__content-register form {
@@ -643,8 +646,31 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         width: 100%;
     }
 
+    .main__content {
+        padding-top: 2.5rem;
+    }
+
     .main__content h1 {
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+    }
+
+    .challenge__link {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 376.98px) {
+    .main__content p {
+        font-size: 0.8rem;
+    }
+
+    .main__content {
+        padding-top: 0;
+    }
+
+    .main__content h1 {
+        font-size: 1.3rem;
         line-height: 1.5rem;
     }
 
@@ -658,24 +684,100 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     }
 
     main .newsletter .newsletter-detail h4 {
-        font-size: 1.3rem;
+        font-size: 1.75rem;
     }
 
     main .newsletter .newsletter-detail p {
         font-size: 0.8rem;
     }
 
+    footer {
+        padding-block: 3rem;
+    }
+
     footer .footer-wrapper {
-        gap: 1rem;
+        gap: 0.9rem;
     }
 
-    .challenge__link {
-        display: none;
+    footer .footer-wrapper .contact ul li,
+    footer .footer-wrapper .faq-1 ul li,
+    footer .footer-wrapper .faq-2 ul li {
+        font-size: 0.9rem;
     }
 
+    footer .footer-wrapper .contact ul li img {
+        width: 18px;
+    }
+}
+
+@media (max-width: 360.98px) {
+    .header__logo img {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 320.98px) {
+    header,
+    .hero__wrapper,
+    .main__wrapper,
     main .newsletter,
     footer {
-        padding-inline: 2rem;
+        padding-inline: 1rem;
+    }
+
+    header #hamburger-menu .fa-bars {
+        font-size: 1.3rem;
+    }
+
+    .header__logo img {
+        width: 7.5rem;
+    }
+
+    .nav__wrapper .navbar {
+        width: 15rem;
+        padding: 3rem 0 2rem 1.3rem;
+    }
+
+    .nav__wrapper .navbar ul {
+        padding-inline-start: 1rem;
+    }
+
+    .nav__wrapper .navbar ul li {
+        padding-block: 1.3rem;
+        padding-inline-start: 2rem;
+    }
+
+    .nav__wrapper .navbar ul li .nav__link {
+        font-size: 1rem;
+    }
+
+    .main__content h1 {
+        font-size: 1.3rem;
+    }
+
+    .main__content p {
+        font-size: 0.75rem;
+    }
+
+    .main__content-register form .input-wrapper input {
+        padding-block: 0.8rem;
+    }
+
+    .main__content-register form button {
+        padding: 0.8rem 1rem;
+    }
+
+    main .newsletter .newsletter-detail h4 {
+        font-size: 1.6rem;
+    }
+
+    footer .footer-wrapper .social-media a .fa-brands {
+        --size: 33px;
+
+        width: var(--size);
+        height: var(--size);
+        line-height: 2.5;
+        font-size: 0.8rem;
     }
 }
 /* Media Query End */
