@@ -30,12 +30,11 @@ body {
 
 /* Header Section Start */
 header {
-    padding: 2.7rem 5rem;
-    position: relative;
+    padding: 5rem;
 }
 
 .header__logo img {
-    width: 11rem;
+    width: 15rem;
 }
 
 .header__logo img:active {
@@ -58,12 +57,12 @@ header {
 
 .nav__wrapper .navbar ul {
     display: flex;
-    gap: 2.5rem;
+    gap: 4.5rem;
 }
 
 .nav__wrapper .navbar ul li .nav__link {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--Very-Dark-Blue);
@@ -110,23 +109,22 @@ header #hamburger-menu .fa-bars {
     font-family: "Open Sans", sans-serif;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3.3rem;
     margin-bottom: 0.8rem;
-    line-height: 2rem;
+    line-height: 3.5rem;
 }
 
 .main__content p {
     font-family: "Open Sans", sans-serif;
-    font-size: 0.87rem;
+    font-size: 1.3rem;
     line-height: 1.3;
-    max-width: 100%;
 }
 
 /* Form section start */
 .main__content-register form {
     position: relative;
     width: 100%;
-    margin-block-start: 0.6rem;
+    margin-block-start: 1.6rem;
 }
 
 .main__content-register form .input-wrapper {
@@ -136,17 +134,15 @@ header #hamburger-menu .fa-bars {
 .main__content-register form .input-wrapper input {
     border: 1px solid #000;
     border-radius: 0.15rem;
-    padding-block: 0.5rem;
-    padding-inline: 1.2rem;
-    margin-inline-end: 0.8rem;
+    padding: 1rem 1.2rem;
     width: 100%;
 }
 
 .main__content-register form .input-wrapper p {
     position: absolute;
     visibility: hidden;
-    font-size: 0.8rem;
-    bottom: -37px;
+    font-size: 1rem;
+    bottom: -40px;
     left: 0;
     color: red;
     font-weight: 600;
@@ -154,11 +150,11 @@ header #hamburger-menu .fa-bars {
 
 .main__content-register form button {
     border-radius: 0.15rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: var(--Bright-Blue);
     color: #fff;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 35%;
 }
 
@@ -168,7 +164,7 @@ header #hamburger-menu .fa-bars {
 
 ::placeholder {
     color: var(--Light-Gray);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Open Sans", sans-serif;
 }
 /* Form section end */
@@ -187,8 +183,8 @@ main .bg-img img {
 .hero__wrapper {
     padding-top: 8.2rem;
     padding-bottom: 5.5rem;
-    padding-inline-start: 4.5rem;
-    padding-inline-end: 3.5rem;
+    padding-inline-start: 5rem;
+    padding-inline-end: 5rem;
     background-color: hsla(240, 80%, 98%, 0.708);
     color: var(--Very-Dark-Blue);
 }
@@ -197,17 +193,17 @@ main .bg-img img {
     font-family: "Open Sans", sans-serif;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 2.28rem;
+    font-size: 3.3rem;
     margin-top: -5rem;
     margin-bottom: 2rem;
 }
 
 .hero__content-detail {
     font-family: "Open Sans", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.45;
-    max-width: 490px;
+    max-width: 100%;
 }
 
 .hero__content-link {
@@ -216,7 +212,7 @@ main .bg-img img {
 
 .hero__content-link a {
     font-family: "Open Sans", sans-serif;
-    font-size: 0.87rem;
+    font-size: 1rem;
     color: var(--Moderate-Cyan);
     text-decoration: none;
     padding-bottom: 0.25rem;
@@ -228,39 +224,45 @@ main .bg-img img {
 }
 
 .hero__wrapper-img img {
-    width: 600px;
+    width: 100%;
 }
 
 /* Review Card Start */
 .hero__content-review {
-    padding: 1rem 1.7rem 0.3rem 1.9rem;
+    padding: 2.5rem 1.9rem;
     margin-block-start: 1.1rem;
     background-color: #fff;
     box-shadow: 0 0 10px #00000025;
     color: var(--Very-Dark-Blue);
-    max-width: 320px;
+    max-width: 400px;
     border-radius: 0.5rem;
 }
 
 .hero__content-desc {
     font-family: "Open Sans", sans-serif;
-    font-size: 0.81rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
     margin-top: 0.4rem;
 }
 
 .hero__content-review > img {
-    width: 1rem;
+    width: 1.3rem;
+}
+
+.hero__content-review .profile {
+    padding-top: 1.1rem;
 }
 
 .hero__content-review .profile img {
-    width: 30px;
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
 }
 
 .hero__content-review .profile .profile-detail h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--Very-Dark-Blue);
     font-weight: 700;
     line-height: 0.1rem;
@@ -268,7 +270,7 @@ main .bg-img img {
 }
 
 .hero__content-review .profile p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 /* Review Card End */
 
@@ -285,13 +287,13 @@ main .newsletter .newsletter-detail {
 }
 
 main .newsletter .newsletter-detail h4 {
-    font-size: 2.1rem;
+    font-size: 3.3rem;
     margin-bottom: 1.1rem;
     font-weight: 700;
 }
 
 main .newsletter .newsletter-detail p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.3;
 }
 
@@ -304,8 +306,7 @@ main .newsletter .newsletter-input form .newsletter-form {
 }
 
 main .newsletter .newsletter-input form .newsletter-form input {
-    padding-block: 0.8rem;
-    padding-inline: 1.3rem;
+    padding: 1rem 1.3rem;
     margin-bottom: 1rem;
     margin-top: -0.3rem;
     border-radius: 0.15rem;
@@ -315,22 +316,21 @@ main .newsletter .newsletter-input form .newsletter-form input {
 
 main .newsletter .newsletter-input form .newsletter-form p {
     position: absolute;
-    bottom: -20px;
-    left: 0;
-    font-size: 0.8rem;
+    bottom: -25px;
+    right: 0;
+    font-size: 1rem;
     color: var(--Light-Grayish-Blue);
     visibility: hidden;
     font-weight: 600;
 }
 
 main .newsletter .newsletter-input button {
-    padding-block: 0.9rem;
-    padding-inline: 1.5rem;
+    padding: 1rem 1.5rem;
     margin-top: 0.8rem;
     border-radius: 0.15rem;
     box-shadow: 0 0 10px #00000025;
     color: #fff;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     letter-spacing: 0.02rem;
@@ -352,16 +352,15 @@ footer {
 
 footer .footer-wrapper {
     display: flex;
-    justify-content: flex-start;
-    gap: 8rem;
+    justify-content: space-between;
     color: var(--Light-Grayish-Blue);
     margin-inline-start: -2rem;
-    padding-block-start: 0.3rem;
+    padding-block-start: 0.7rem;
 }
 
 .challenge__link {
     color: var(--Light-Grayish-Blue);
-    display: none;
+    text-align: center;
 }
 
 .challenge__link a {
@@ -376,8 +375,8 @@ footer .footer-wrapper {
 footer .footer-wrapper .contact ul li,
 footer .footer-wrapper .faq-1 ul li,
 footer .footer-wrapper .faq-2 ul li {
-    font-size: 1.05rem;
-    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    padding-bottom: 1.1rem;
 }
 
 footer .footer-wrapper .contact ul li:hover,
@@ -388,12 +387,12 @@ footer .footer-wrapper .faq-2 ul li:hover {
 }
 
 footer .footer-wrapper .contact ul li img {
-    width: 20px;
+    width: 25px;
     margin-inline-end: 0.5rem;
 }
 
 footer .footer-wrapper .social-media a .fa-brands {
-    --size: 35px;
+    --size: 50px;
 
     width: var(--size);
     height: var(--size);
@@ -401,8 +400,8 @@ footer .footer-wrapper .social-media a .fa-brands {
     color: var(--Light-Grayish-Blue);
     border: 1.5px solid var(--Light-Grayish-Blue);
     text-align: center;
-    line-height: 2;
-    font-size: 1rem;
+    line-height: 2.3;
+    font-size: 1.3rem;
     margin-right: 1rem;
 }
 
@@ -413,50 +412,167 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
 /* Footer End */
 
 /* Media Query Start */
-@media (max-width: 1600.98px) {
+@media (max-width: 1440.98px) {
     header {
-        padding: 5rem;
+        padding: 4.05rem 5rem;
     }
 
     .header__logo img {
-        width: 100%;
+        width: 10.5rem;
+    }
+
+    .nav__wrapper .navbar ul {
+        gap: 3.5rem;
+    }
+
+    .nav__wrapper .navbar ul li .nav__link {
+        font-size: 1.03rem;
+    }
+
+    .main__content {
+        padding-top: 5.2rem;
+        max-width: 600px;
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2.52rem;
+        line-height: 3.7rem;
+        margin-bottom: 1rem;
     }
 
     .main__content p {
-        font-size: 1.2rem;
+        font-size: 1.13rem;
+        line-height: 1.3;
+    }
+
+    .main__content-register form .input-wrapper {
+        width: 53%;
     }
 
     .main__content-register form .input-wrapper input {
-        padding-block: 1rem;
-    }
-
-    .main__content-register form .input-wrapper p {
-        font-size: 1rem;
-        bottom: -45px;
+        padding: 0.67rem 1.3rem;
     }
 
     .main__content-register form button {
-        padding: 1rem 1rem;
-        font-size: 1rem;
+        padding: 0;
+        font-size: 0.95rem;
+        width: 34%;
+    }
+
+    .main__wrapper-img img {
+        padding-top: 0.34rem;
     }
 
     ::placeholder {
+        font-size: 0.9rem;
+    }
+
+    main .bg-img img {
+        padding-top: 10.5rem;
+    }
+
+    .hero__wrapper {
+        padding-top: 9.2rem;
+        padding-bottom: 6.2rem;
+    }
+
+    .hero__content h2 {
+        font-size: 2.53rem;
+    }
+
+    .hero__content-detail {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 530px;
+    }
+
+    .hero__wrapper-img img {
+        width: 550px;
+        margin-block-start: -3.7rem;
+    }
+
+    .hero__content-review {
+        padding: 1rem 2rem;
+        margin-block-start: 1.5rem;
+        max-width: 355px;
+    }
+
+    .hero__content-desc {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.88rem;
+    }
+
+    .hero__content-review > img {
+        width: 1.1rem;
+        margin-top: 0.8rem;
+    }
+
+    .hero__content-review .profile {
+        padding-top: 0;
+    }
+
+    .hero__content-review .profile img {
+        --size: 30px;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .hero__content-review .profile .profile-detail h3 {
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+
+    .hero__content-review .profile p {
+        font-size: 0.6rem;
+    }
+
+    main .newsletter {
+        padding: 5.5rem 5rem;
+    }
+
+    main .newsletter .newsletter-detail h4 {
+        font-size: 2.1rem;
+    }
+
+    main .newsletter .newsletter-detail p {
+        font-size: 1.13rem;
+    }
+
+    main .newsletter .newsletter-input form .newsletter-form input {
+        padding: 0.8rem 1.3rem;
+    }
+
+    main .newsletter .newsletter-input button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        padding: 4.05rem 4.05rem 0.2rem 4.05rem;
+    }
+
+    footer .footer-wrapper .contact ul li,
+    footer .footer-wrapper .faq-1 ul li,
+    footer .footer-wrapper .faq-2 ul li {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    footer .footer-wrapper .contact ul li img {
+        width: 17px;
+    }
+
+    footer .footer-wrapper .social-media a .fa-brands {
+        --size: 40px;
+
+        width: var(--size);
+        height: var(--size);
+        line-height: 2.5;
         font-size: 1rem;
     }
 
-    footer .footer-wrapper {
-        gap: 16rem;
-    }
-}
-
-@media (max-width: 1400.98px) {
-    footer .footer-wrapper {
-        gap: 10rem;
+    footer .footer-wrapper .social-media a .fa-brands:hover {
+        color: var(--Bright-Blue);
+        border-color: var(--Bright-Blue);
     }
 }
 
@@ -485,14 +601,36 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         flex-direction: column-reverse;
     }
 
+    .main__content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main__content-register form .input-wrapper {
+        width: 100%;
+    }
+
+    .main__content-register form button {
+        width: 100%;
+    }
+
     main .newsletter {
         flex-direction: column;
         text-align: center;
     }
 
+    .main__wrapper-img img {
+        max-width: 100%;
+    }
+
     .hero__wrapper {
         flex-direction: column-reverse;
         gap: 8rem;
+    }
+
+    .hero__content-detail {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     .hero__wrapper-img img {
@@ -517,38 +655,34 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     .nav__wrapper .navbar {
         z-index: 9999;
         position: absolute;
-        width: 25rem;
-        top: 70%;
-        right: -200%;
+        width: auto;
+        top: -200%;
+        right: 4.05rem;
+        left: 4.05rem;
         background-color: #1201018a;
         backdrop-filter: blur(20px);
-        padding: 4rem 0 4rem 1.3rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
+        padding: 4rem 4rem 4rem 2rem;
+        margin: 0;
+        border-radius: 1rem;
         transition: 0.3s ease-in-out;
-        transform-origin: 0 0;
     }
 
     .nav__wrapper .navbar.active {
-        right: 0;
+        top: 15%;
     }
 
     .nav__wrapper .navbar ul {
         flex-direction: column;
-        gap: 3rem;
         width: 100%;
-        padding-inline-start: 2.7rem;
     }
 
     .nav__wrapper .navbar ul li {
         --radius: 1rem;
 
-        width: 100%;
         background-color: whitesmoke;
         padding-block: 1.5rem;
-        padding-inline-start: 3rem;
-        border-top-left-radius: var(--radius);
-        border-bottom-left-radius: var(--radius);
+        border-radius: var(--radius);
+        text-align: center;
     }
 
     .nav__wrapper .navbar ul li .nav__link {
@@ -560,21 +694,20 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         display: none;
     }
 
-    footer {
-        position: relative;
+    .main__content-register form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
-    footer .footer-wrapper {
-        margin-top: 2rem;
+    .main__content-register form .input-wrapper {
+        width: 100%;
     }
 
-    .challenge__link {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
+    .main__content-register form button {
+        padding: 0.67rem 1.3rem;
+        font-size: 0.95rem;
+        width: 100%;
     }
 }
 
@@ -587,7 +720,8 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     }
 
     .nav__wrapper .navbar {
-        width: 20rem;
+        left: 3rem;
+        right: 3rem;
     }
 
     .nav__wrapper .navbar ul {
@@ -627,6 +761,12 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
     main .newsletter,
     footer {
         padding-inline: 2rem;
+    }
+
+    .nav__wrapper .navbar {
+        left: 2rem;
+        right: 2rem;
+        padding: 2rem 2rem 2rem 0;
     }
 
     .header__logo img {
@@ -724,26 +864,17 @@ footer .footer-wrapper .social-media a .fa-brands:hover {
         padding-inline: 1rem;
     }
 
+    .nav__wrapper .navbar {
+        left: 1rem;
+        right: 1rem;
+    }
+
     header #hamburger-menu .fa-bars {
         font-size: 1.3rem;
     }
 
     .header__logo img {
         width: 7.5rem;
-    }
-
-    .nav__wrapper .navbar {
-        width: 15rem;
-        padding: 3rem 0 2rem 1.3rem;
-    }
-
-    .nav__wrapper .navbar ul {
-        padding-inline-start: 1rem;
-    }
-
-    .nav__wrapper .navbar ul li {
-        padding-block: 1.3rem;
-        padding-inline-start: 2rem;
     }
 
     .nav__wrapper .navbar ul li .nav__link {
